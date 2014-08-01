@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>IwStyle</id>
+        <version>0.0.2-beta</version>
+        <authors>Harry Pfleger - Infoware</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Basic semantic cascading styles (css).</description>
+        <releaseNotes>Very early beta version. Use on your own risk...</releaseNotes>
+        <dependencies>
+            <dependency id="normalize.css" />
+        </dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System.Web" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="Content\iwstyle.css" target="content\Content\iwstyle.css" />
+    </files>
+</package>

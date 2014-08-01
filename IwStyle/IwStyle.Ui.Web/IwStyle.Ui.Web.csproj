@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\!Vs.Projects\Inofware.GitHub.Projects\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +59,55 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="!Design\!design.css">
+      <DependentUpon>!design.scss</DependentUpon>
+    </Content>
+    <Content Include="!Design\!design.min.css">
+      <DependentUpon>!design.css</DependentUpon>
+    </Content>
+    <Content Include="!Design\!test\test-content.html" />
+    <Content Include="!Design\!test\test-grid.html" />
+    <Content Include="!Design\!test\test-list-ul.html" />
+    <Content Include="!Design\!test\test-box.html" />
+    <Content Include="!Design\!test\test.css">
+      <DependentUpon>test.scss</DependentUpon>
+    </Content>
+    <Content Include="!Design\!test\test.min.css">
+      <DependentUpon>test.css</DependentUpon>
+    </Content>
+    <Content Include="!Design\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="!Design\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="!Readme.txt" />
+    <Content Include="Content\iwstyle.css">
+      <DependentUpon>iwstyle.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\iwstyle.min.css">
+      <DependentUpon>iwstyle.css</DependentUpon>
+    </Content>
+    <Content Include="Content\iwstyle.scss" />
+    <Content Include="!Design\!design.scss" />
+    <Content Include="!Design\!design.css.map">
+      <DependentUpon>!design.css</DependentUpon>
+    </Content>
+    <Content Include="Content\iwstyle.css.map">
+      <DependentUpon>iwstyle.css</DependentUpon>
+    </Content>
+    <Content Include="Content\normalize.css" />
+    <Content Include="nuspec-packager.config" />
+    <Content Include="Package.nuspec" />
+    <Content Include="packages.config" />
+    <Content Include="!Design\!test\test.scss" />
+    <Content Include="!Design\!test\test.css.map">
+      <DependentUpon>test.css</DependentUpon>
+    </Content>
+    <Content Include="!Design\style.scss" />
+    <Content Include="!Design\style.css.map">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -69,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="!!Out-Nuget\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -95,6 +149,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

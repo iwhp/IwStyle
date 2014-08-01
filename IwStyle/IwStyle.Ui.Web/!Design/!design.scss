@@ -1,0 +1,199 @@
+﻿@import 'style.scss';
+
+/*#region SET PROPERTIES*/
+
+.iws-set-max-width {
+    width: 100%;
+    max-width: 500px; // override this property in the tag used
+}
+
+.iws-set-margin-left-top {
+    margin: 50px auto; // override this property in the tag used
+}
+
+/*#endregion*/
+
+/*#region BOX*/
+
+.iws-box-center {
+    margin: 0 auto;
+}
+
+.iws-box-top-on-parent {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.iws-box-middle-on-parent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.iws-box-bottom-on-parent {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+/*#endregion*/
+
+/*#region CONTENT*/
+
+.iws-content-left {
+    text-align: left;
+}
+
+.iws-content-right {
+    text-align: right;
+}
+
+.iws-content-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iws-content-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*#endregion*/
+
+/*#region LIST-UL*/
+
+ul.iws-list-ul-horizontal-nowrap {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+ul.iws-list-ul-horizontal-nowrap li {
+    display: inline;
+}
+
+ul.iws-list-ul-horizontal-wrap-left, ul.iws-list-ul-horizontal-wrap-right {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.iws-list-ul-horizontal-wrap-left li {
+    float: left;
+}
+
+ul.iws-list-ul-horizontal-wrap-right li {
+    float: right;
+}
+
+/*#endregion*/
+
+/*#region GRID*/
+
+/*#region GRID / ROW*/
+
+.iws-grid {
+    width: 100%;
+}
+
+.iws-grid, .iws-row {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.iws-grid .iws-row [class*='ams-span']:first-child {
+    margin-left: 0;
+}
+
+.iws-grid .iws-row [class*='ams-span'] {
+    float: left;
+    min-height: 1px;
+}
+
+.iws-grid .iws-row::after {
+    clear: both;
+}
+
+.iws-grid .iws-row::before, .iws-grid .iws-row::after {
+    display: table;
+    content: '';
+}
+
+/*#endregion*/
+
+/*#region SPAN1-12 */
+
+@mixin span($count) {
+    width: 100 / 12 * $count + 0% !important;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+$gridcount: 12;
+
+@while $gridcount > 0 {
+    .iws-grid .iws-row .iws-span#{$gridcount} {
+        @include span($gridcount);
+    }
+
+    $gridcount: $gridcount - 1;
+}
+
+/*#endregion */
+
+/*#region OFFSET1-12 */
+
+@mixin offset($count) {
+    margin-left: 100 / 12 * $count + 0% !important;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+$gridcount: 12;
+
+@while $gridcount > 0 {
+    .iws-grid .iws-row .iws-offset#{$gridcount} {
+        @include offset($gridcount);
+    }
+
+    $gridcount: $gridcount - 1;
+}
+
+/*#endregion */
+
+/*#region STYLES*/
+
+.iws-grid-middle-text-set-line-height {
+    line-height: 100%;
+}
+
+.iws-grid-middle-a1-on-span {
+    display: table;
+}
+
+.iws-grid-middle-a1-add-div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region FLOAT*/
+
+.iws-float-right {
+    float: right;
+}
+
+/*#endregion*/
+
+/*#region WRAP / NOWRAP*/
+
+.iws-nowrap {
+    white-space: nowrap;
+}
+
+/*#endregion*/
