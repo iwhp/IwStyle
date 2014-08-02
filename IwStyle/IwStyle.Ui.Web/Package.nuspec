@@ -6,7 +6,7 @@
         <authors>Harry Pfleger - Infoware</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Basic semantic cascading styles (css).</description>
-        <releaseNotes>Very early beta version. Use on your own risk...</releaseNotes>
+        <releaseNotes>Very early preview. Use on your own risk...</releaseNotes>
         <dependencies>
             <dependency id="normalize.css" />
         </dependencies>
