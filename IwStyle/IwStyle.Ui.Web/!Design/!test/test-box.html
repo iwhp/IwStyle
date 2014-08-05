@@ -7,53 +7,66 @@
     <link href="test.css" rel="stylesheet" />
 </head>
 <body style="width:100%">
-    <h2>ams-box-center</h2>
-    <div class="test-sample-border">
-        <div class="ams-box-center test-inline-border">
+    <h2>iws-box-center</h2>
+    <div class="test-sample-box test-height-plus-50">
+        <div class="iws-box-center test-inline-box">
+            <p class="test-definition">
+                The box will centered vertically within its container.
+                <br />By default no left and right margin is defined. Use an inline style or custom style for setting the margin (margin: ? ? ? ?). See example below.
+                <br />By default it will stick to the top. Use <b>iws-box-bottom</b> to bring it to the bottom.
+            </p>
+            <p class="test-lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+    <h2>iws-box-center<br />iws-set-max-width (max-width:500px;)</h2>
+    <div class="test-sample-box">
+        <p class="test-definition">
+            By using <b>iws-set-max-width</b> the box will get a max-width and so, it will not grow more than the value specified.
+            <br />Use an inline style or custom style for setting max-width (max-width: ?;).
+        </p>
+        <div class="iws-box-center iws-set-max-width test-inline-box" style="max-width:500px;">
+            <p>Lorem Ipsum is simply dummy text </p>
+        </div>
+        <div class="iws-box-center iws-set-max-width test-inline-box" style="max-width:500px;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
-    <h2>ams-box-center ams-set-max-width</h2>
-    <div class="test-sample-border">
-        <div class="ams-box-center ams-set-max-width test-inline-border" style="max-width:500px;">
+    <h2>iws-box-center<br />iws-set-margin (margin: 10px 20px 30px 40px;)</h2>
+    <div class="test-sample-box">
+        <div class="iws-box-center iws-set-margin test-inline-box" style="margin: 10px 20px 30px 40px;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
-    <h2>ams-box-center ams-set-margin-left-top</h2>
-    <div class="test-sample-border">
-        <div class="ams-box-center ams-set-margin-left-top test-inline-border" style="margin: 0 50px;">
+    <h2>iws-box-middle</h2>
+    <div class="iws-box-middle test-sample-box" style="height:400px;">
+        <div class="test-inline-box">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
-    <h2>ams-box-middle-on-parent</h2>
-    <div class="ams-box-middle-on-parent test-sample-border" style="height:400px;">
-        <div class="inline-border">
+    <h2>iws-box-middle<br />iws-box-center<br />iws-set-margin (margin:0 100px;)</h2>
+    <div class="iws-box-middle test-sample-box" style="height:400px;">
+        <div class="iws-box-center iws-set-margin test-inline-box" style="margin:0 100px;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
-    <h2>ams-box-middle-on-parent ams-box-center ams-set-margin-left-top</h2>
-    <div class="ams-box-middle-on-parent test-sample-border" style="height:400px;">
-        <div class="ams-box-center ams-set-margin-left-top test-inline-border" style="margin:0 100px;">
+    <h2>iws-box-top<br />iws-box-center<br />iws-set-margin (margin:0 100px;)</h2>
+    <div class="iws-box-top test-sample-box" style="height:400px;">
+        <div class="iws-box-center iws-set-margin test-inline-box" style="margin:0 100px;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 
-    <h2>ams-box-top-on-parent ams-box-center ams-set-margin-left-top</h2>
-    <div class="ams-box-top-on-parent test-sample-border" style="height:400px;">
-        <div class="ams-box-center ams-set-margin-left-top test-inline-border" style="margin:0 100px;">
+    <h2>iws-box-bottom<br />iws-box-center<br />iws-set-margin (margin:0 100px;)</h2>
+    <div class="iws-box-bottom test-sample-box" style="height:400px;">
+        <div class="iws-box-center iws-set-margin test-inline-box" style="margin:0 100px;">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
-
-    <h2>ams-box-bottom-on-parent ams-box-center ams-set-margin-left-top</h2>
-    <div class="ams-box-bottom-on-parent test-sample-border" style="height:400px;">
-        <div class="ams-box-center ams-set-margin-left-top test-inline-border" style="margin:0 100px;">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-    </div>
+    <div style="height:100px"></div>
 </body>
 </html>

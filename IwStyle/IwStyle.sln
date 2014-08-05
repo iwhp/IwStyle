@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IwStyle.Ui.Web", "IwStyle.Ui.Web\IwStyle.Ui.Web.csproj", "{A67BB76A-3181-4B81-92DB-C13377312A5A}"
 EndProject
@@ -10,6 +10,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\LICENSE = ..\LICENSE
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A0332966-2997-4464-8302-864FF28AA631}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!External", "!External", "{39F431E9-189E-4C44-BD6E-E6BFE74C7B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Am.Practices.Template.Html.Harry", "..\..\..\Tfs.Am\!Am\Main\Am.Practices\Am.Practices.Template\Am.Practices.Template.Html.Harry\Am.Practices.Template.Html.Harry.csproj", "{781F21CB-8F38-431B-B022-3773CACCADBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Am.Practices.Web.harry", "..\..\..\Tfs.Am\!Am\Main\Am.Practices\Am.Practices\Am.Practices.Web.harry\Am.Practices.Web.harry.csproj", "{A9FEAA97-348A-43F3-83E1-4C948D6A042D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +34,20 @@ Global
 		{A67BB76A-3181-4B81-92DB-C13377312A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67BB76A-3181-4B81-92DB-C13377312A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67BB76A-3181-4B81-92DB-C13377312A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781F21CB-8F38-431B-B022-3773CACCADBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781F21CB-8F38-431B-B022-3773CACCADBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781F21CB-8F38-431B-B022-3773CACCADBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781F21CB-8F38-431B-B022-3773CACCADBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{781F21CB-8F38-431B-B022-3773CACCADBB} = {39F431E9-189E-4C44-BD6E-E6BFE74C7B16}
+		{A9FEAA97-348A-43F3-83E1-4C948D6A042D} = {39F431E9-189E-4C44-BD6E-E6BFE74C7B16}
 	EndGlobalSection
 EndGlobal

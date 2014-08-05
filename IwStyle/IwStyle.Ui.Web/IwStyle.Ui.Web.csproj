@@ -65,6 +65,9 @@
     <Content Include="!Design\!design.min.css">
       <DependentUpon>!design.css</DependentUpon>
     </Content>
+    <Content Include="!Design\!test\Media\woolly-mc.png" />
+    <Content Include="!Design\!test\test-float.html" />
+    <Content Include="!Design\!test\test-box-content-box.html" />
     <Content Include="!Design\!test\test-content.html" />
     <Content Include="!Design\!test\test-grid.html" />
     <Content Include="!Design\!test\test-list-ul.html" />

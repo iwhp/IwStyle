@@ -3,11 +3,11 @@
 /*#region SET PROPERTIES*/
 
 .iws-set-max-width {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 500px; // override this property in the tag used
 }
 
-.iws-set-margin-left-top {
+.iws-set-margin {
     margin: 50px auto; // override this property in the tag used
 }
 
@@ -19,17 +19,25 @@
     margin: 0 auto;
 }
 
-.iws-box-top-on-parent {
+.iws-box-left {
+    margin: 0 auto 0 0;
+}
+
+.iws-box-right {
+    margin: 0 0 0 auto;
+}
+
+.iws-box-top {
     display: table-cell;
     vertical-align: top;
 }
 
-.iws-box-middle-on-parent {
+.iws-box-middle {
     display: table-cell;
     vertical-align: middle;
 }
 
-.iws-box-bottom-on-parent {
+.iws-box-bottom {
     display: table-cell;
     vertical-align: bottom;
 }
@@ -98,16 +106,18 @@ ul.iws-list-ul-horizontal-wrap-right li {
 
 .iws-grid, .iws-row {
     display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
     overflow: hidden;
 }
 
-.iws-grid .iws-row [class*='ams-span']:first-child {
+.iws-grid .iws-row [class*='iws-span']:first-child {
     margin-left: 0;
 }
 
-.iws-grid .iws-row [class*='ams-span'] {
+.iws-grid .iws-row [class*='iws-span'] {
     float: left;
     min-height: 1px;
 }
@@ -127,6 +137,8 @@ ul.iws-list-ul-horizontal-wrap-right li {
 
 @mixin span($count) {
     width: 100 / 12 * $count + 0% !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
 }
@@ -147,6 +159,8 @@ $gridcount: 12;
 
 @mixin offset($count) {
     margin-left: 100 / 12 * $count + 0% !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
 }
@@ -184,8 +198,41 @@ $gridcount: 12;
 
 /*#region FLOAT*/
 
+/* LINKS:
+   > http://css-tricks.com/all-about-floats/
+*/
+.iws-float-left {
+    float: left;
+}
+
 .iws-float-right {
     float: right;
+}
+
+.iws-float-parent {
+    display: table;
+}
+
+.iws-float-parent:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+}
+
+.iws-float-parent1 {
+    // all children are floated
+    overflow: auto;
+}
+
+.iws-float-clear-left {
+    clear: left;
+}
+
+.iws-float-clear-right {
+    clear: right;
 }
 
 /*#endregion*/

@@ -1,7 +1,34 @@
-﻿.test-sample-border {
-  border: 1px solid orange; }
+﻿html, body {
+  height: 100%; }
 
-.test-inline-border {
+body {
+  padding: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 1em; }
+
+.test-sample-box {
+  border: 1px solid orange;
+  padding: 10px; }
+
+.test-inline-box {
   border: 1px solid #00ff21; }
+
+.test-definition {
+  color: #484848; }
+
+.test-definition:before {
+  content: 'Definition: ';
+  display: block;
+  font-weight: 600; }
+
+.test-lorem {
+  color: #5099ff; }
+
+.test-height-plus-50 {
+  min-height: calc(100%/3); }
 
 /*# sourceMappingURL=test.css.map */
