@@ -9,6 +9,9 @@
 .iws-set-margin {
   margin: 50px auto; }
 
+.iws-set-overflow-hidden {
+  overflow: hidden; }
+
 /*#endregion*/
 /*#region BOX*/
 .iws-box-center {
@@ -314,6 +317,20 @@ ul.iws-list-ul-horizontal-wrap-right li {
 
 .iws-float-clear-right {
   clear: right; }
+
+/*#endregion*/
+/*#region INLINE*/
+.iws-inlineblock {
+  display: inline-block;
+  border: 0; }
+
+.iws-inlineblock-parent {
+  line-height: 0; }
+
+.iws-inlineblock-parent-nowrap {
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap; }
 
 /*#endregion*/
 /*#region WRAP / NOWRAP*/

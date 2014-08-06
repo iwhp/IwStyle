@@ -11,6 +11,10 @@
     margin: 50px auto; // override this property in the tag used
 }
 
+.iws-set-overflow-hidden {
+    overflow: hidden;
+}
+
 /*#endregion*/
 
 /*#region BOX*/
@@ -233,6 +237,25 @@ $gridcount: 12;
 
 .iws-float-clear-right {
     clear: right;
+}
+
+/*#endregion*/
+
+/*#region INLINE*/
+
+.iws-inlineblock {
+    display: inline-block;
+    border: 0;
+}
+
+.iws-inlineblock-parent {
+    line-height: 0;
+}
+
+.iws-inlineblock-parent-nowrap {
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /*#endregion*/

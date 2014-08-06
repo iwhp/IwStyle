@@ -66,6 +66,7 @@
       <DependentUpon>!design.css</DependentUpon>
     </Content>
     <Content Include="!Design\!test\Media\woolly-mc.png" />
+    <Content Include="!Design\!test\test-inline.html" />
     <Content Include="!Design\!test\test-float.html" />
     <Content Include="!Design\!test\test-box-content-box.html" />
     <Content Include="!Design\!test\test-content.html" />
