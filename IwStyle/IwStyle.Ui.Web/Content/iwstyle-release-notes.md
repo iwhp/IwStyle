@@ -7,7 +7,7 @@ Prefixes:
 - iwt - Themeing (styleing)
 - iwr - Responsive Design specific layouting
 
-**Release: 0.0.5**
+**Release: 0.1.0**
 
 - change iwl- to iwl-
 
