@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "file": "style.css",
+  "file": "!design.css",
   "sources": [
-    "style.scss"
+    "!design.scss"
   ],
   "names": [],
   "mappings": "AAAA;EACI,QAAQ"

@@ -1,0 +1,267 @@
+﻿/*#region SET PROPERTIES*/
+
+.iwl-set-max-width {
+    /*width: 100%;*/
+    max-width: 500px; // override this property in the tag used
+}
+
+.iwl-set-margin {
+    margin: 50px auto; // override this property in the tag used
+}
+
+.iwl-set-overflow-hidden {
+    overflow: hidden;
+}
+
+/*#endregion*/
+
+/*#region BOX*/
+
+.iwl-box-center {
+    margin: 0 auto;
+}
+
+.iwl-box-left {
+    margin: 0 auto 0 0;
+}
+
+.iwl-box-right {
+    margin: 0 0 0 auto;
+}
+
+.iwl-box-top {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.iwl-box-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.iwl-box-bottom {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+/*#endregion*/
+
+/*#region CONTENT*/
+
+.iwl-content-left {
+    text-align: left;
+}
+
+.iwl-content-right {
+    text-align: right;
+}
+
+.iwl-content-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iwl-content-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*#endregion*/
+
+/*#region LIST-UL*/
+
+ul.iwl-list-ul-horizontal-nowrap {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+ul.iwl-list-ul-horizontal-nowrap li {
+    display: inline;
+}
+
+ul.iwl-list-ul-horizontal-wrap-left, ul.iwl-list-ul-horizontal-wrap-right {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.iwl-list-ul-horizontal-wrap-left li {
+    float: left;
+}
+
+ul.iwl-list-ul-horizontal-wrap-right li {
+    float: right;
+}
+
+/*#endregion*/
+
+/*#region GRID*/
+
+/*#region GRID / ROW*/
+
+.iwl-grid {
+    width: 100%;
+}
+
+.iwl-grid, .iwl-row {
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.iwl-grid .iwl-row [class*='iwl-span']:first-child {
+    margin-left: 0;
+}
+
+.iwl-grid .iwl-row [class*='iwl-span'] {
+    float: left;
+    min-height: 1px;
+}
+
+.iwl-grid .iwl-row::after {
+    clear: both;
+}
+
+.iwl-grid .iwl-row::before, .iwl-grid .iwl-row::after {
+    display: table;
+    content: '';
+}
+
+/*#endregion*/
+
+/*#region SPAN1-12 */
+
+@mixin span($count) {
+    width: 100 / 12 * $count + 0% !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+$gridcount: 12;
+
+@while $gridcount > 0 {
+    .iwl-grid .iwl-row .iwl-span#{$gridcount} {
+        @include span($gridcount);
+    }
+
+    $gridcount: $gridcount - 1;
+}
+
+/*#endregion */
+
+/*#region OFFSET1-12 */
+
+@mixin offset($count) {
+    margin-left: 100 / 12 * $count + 0% !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+$gridcount: 12;
+
+@while $gridcount > 0 {
+    .iwl-grid .iwl-row .iwl-offset#{$gridcount} {
+        @include offset($gridcount);
+    }
+
+    $gridcount: $gridcount - 1;
+}
+
+/*#endregion */
+
+/*#region STYLES*/
+
+.iwl-grid-middle-text-set-line-height {
+    line-height: 100%;
+}
+
+.iwl-grid-middle-a1-on-span {
+    display: table;
+}
+
+.iwl-grid-middle-a1-add-div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region FLOAT*/
+
+/* LINKS:
+   > http://css-tricks.com/all-about-floats/
+*/
+.iwl-float-left {
+    float: left;
+}
+
+.iwl-float-right {
+    float: right;
+}
+
+.iwl-float-parent {
+    display: table;
+}
+
+.iwl-float-parent:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+}
+
+.iwl-float-parent1 {
+    // all children are floated
+    overflow: auto;
+}
+
+.iwl-float-clear-left {
+    clear: left;
+}
+
+.iwl-float-clear-right {
+    clear: right;
+}
+
+/*#endregion*/
+
+/*#region INLINE*/
+
+.iwl-inlineblock {
+    display: inline-block;
+    border: 0;
+}
+
+.iwl-inlineblock-parent {
+    line-height: 0;
+}
+
+.iwl-inlineblock-parent-nowrap {
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*#endregion*/
+
+/*#region WRAP / NOWRAP*/
+
+.iwl-nowrap {
+    white-space: nowrap;
+}
+
+/*#endregion*/
