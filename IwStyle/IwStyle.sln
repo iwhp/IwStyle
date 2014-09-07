@@ -11,13 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A0332966-2997-4464-8302-864FF28AA631}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!External", "!External", "{39F431E9-189E-4C44-BD6E-E6BFE74C7B16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Am.Practices.Template.Html.Harry", "..\..\..\Tfs.Am\!Am\Main\Am.Practices\Am.Practices.Template\Am.Practices.Template.Html.Harry\Am.Practices.Template.Html.Harry.csproj", "{781F21CB-8F38-431B-B022-3773CACCADBB}"
