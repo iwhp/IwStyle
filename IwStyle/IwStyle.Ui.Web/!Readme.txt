@@ -19,6 +19,10 @@ SOURCE
 ============================================================================================================
 TODO
 ------------------------------------------------------------------------------------------------------------
+CHECKOUT
+https://github.com/robertpiira/ingrid
+https://github.com/hiloki/kitecss
+------------------------------------------------------------------------------------------------------------
 REPSONSIVE DESIGN
 http://www.infoq.com/news/2014/08/baguetteBoxjs?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global&utm_reader=feedly
 http://www.e-sane.com/

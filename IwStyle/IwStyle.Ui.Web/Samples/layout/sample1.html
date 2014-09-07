@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .grid {
+            display: -ms-grid;
+            -ms-grid-rows: 1fr 1fr;
+            grid-rows: 1fr 1fr;
+            -ms-grid-columns: 1fr 1fr;
+            grid-columns: 1fr 1fr;
+        }
+
+        .top {
+            -ms-grid-row: 0;
+            grid-row: 0;
+        }
+
+        .bottom {
+            -ms-grid-row: 1;
+            grid-row: 1;
+        }
+
+        .left {
+            -ms-grid-column: 0;
+            grid-column: 0;
+        }
+
+        .right {
+            -ms-grid-column: 1;
+            grid-column: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="sample1.png" style="width:100px" />
+    <div class="grid">
+        <div class="top left" style="background-color: #7f7f7f;">top left</div>
+        <div class="top right" style="background-color: #a6a6a6;">top right</div>
+        <div class="bottom left" style="background-color: #a6a6a6;">bottom left</div>
+        <div class="bottom right" style=" background-color: #d9d9d9;">bottom right</div>
+    </div>
+
+
+</body>
+</html>

@@ -141,6 +141,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Samples\layout\sample.html" />
+    <Content Include="Samples\layout\sample1.png" />
+    <Content Include="Samples\layout\sample2.png" />
+    <Content Include="Samples\layout\sample3.png" />
+    <Content Include="Samples\layout\sample4.png" />
+    <Content Include="Samples\layout\sample6.html" />
+    <Content Include="Samples\layout\sample7.html" />
+    <Content Include="Samples\layout\sample8.html" />
+    <Content Include="Samples\layout\sample9.html" />
+    <Content Include="Samples\layout\sample5.html" />
+    <Content Include="Samples\layout\sample4.html" />
+    <Content Include="Samples\layout\sample3.html" />
+    <Content Include="Samples\layout\sample2.html" />
+    <Content Include="Samples\layout\sample1.html" />
+    <Content Include="Samples\layout\sample5.png" />
+    <Content Include="Samples\layout\sample6.png" />
+    <Content Include="Samples\layout\sample7.png" />
+    <Content Include="Samples\layout\sample8.png" />
+    <Content Include="Samples\layout\sample9.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +167,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="!!Out-Nuget\" />
+    <Folder Include="Samples\responsive\" />
+    <Folder Include="Samples\theming\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
