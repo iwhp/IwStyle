@@ -1,9 +1,1 @@
-{
-  "version": 3,
-  "file": "!design.css",
-  "sources": [
-    "!design.scss"
-  ],
-  "names": [],
-  "mappings": ""
-}
+﻿{"version":3,"file":"!design.css","sources":["!design.scss"],"names":[],"mappings":""}

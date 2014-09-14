@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="app">
+<head>
+    <title>test1</title>
+    <style>
+        .top {
+            height: 150px;
+            background-color: rgba(0, 128, 0, 0.49);
+        }
+
+        .topstick {
+            height: 100px;
+            background-color: rgba(174, 0, 255, 0.59);
+        }
+
+        .section1 {
+            height: 200px;
+            background-color: rgba(0, 0, 255, 0.50);
+        }
+
+        .section2 {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div data-iws-sticktop class="topstick">
+        Simple test: the topstick uses the full width.
+    </div>
+    <div class="section1"></div>
+    <div class="section2"></div>
+
+    <script src="../../scripts/jquery-2.1.1.min.js"></script>
+    <script src="../../scripts/angular.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../../App/lib/iws/directives/sticktop/sticktop.js"></script>
+</body>
+</html>

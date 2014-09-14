@@ -17,6 +17,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Am.Practices.Template.Html.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Am.Practices.Web.harry", "..\..\..\Tfs.Am\!Am\Main\Am.Practices\Am.Practices\Am.Practices.Web.harry\Am.Practices.Web.harry.csproj", "{A9FEAA97-348A-43F3-83E1-4C948D6A042D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IwStyleNg.Ui.Web", "IwStyleNg.Ui.Web\IwStyleNg.Ui.Web.csproj", "{CFEFF900-A26C-40BC-BA06-CAB2AB6BCD23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FADD16F0-F477-4D88-B7ED-385C973F986B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +44,10 @@ Global
 		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9FEAA97-348A-43F3-83E1-4C948D6A042D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFEFF900-A26C-40BC-BA06-CAB2AB6BCD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFEFF900-A26C-40BC-BA06-CAB2AB6BCD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFEFF900-A26C-40BC-BA06-CAB2AB6BCD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFEFF900-A26C-40BC-BA06-CAB2AB6BCD23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

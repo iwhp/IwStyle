@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>IwStyle</id>
-    <version>0.1.1-beta</version>
+    <id>IwStyleNg</id>
+    <version>0.0.1-beta</version>
     <authors>Harry Pfleger - Infoware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Basic semantic cascading styles (css).</description>
+    <description>Angular Web Site Building blocks (directives)</description>
     <releaseNotes>Early preview. Use on your own risk ;-)</releaseNotes>
     <dependencies>
-      <dependency id="normalize.css" />
+      <dependency id="AngularJS.Core" />
+      <dependency id="jQuery" />
     </dependencies>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Web" targetFramework="" />
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="Content\iwstyle.css" target="content\Content\iwstyle.css" />
+    <file src="App\lib\iws\directives\sticktop\sticktop.html" target="content\App\lib\iws\directives\sticktop\sticktop.html" />
+    <file src="App\lib\iws\directives\sticktop\sticktop.js" target="content\App\lib\iws\directives\sticktop\sticktop.js" />
   </files>
 </package>
