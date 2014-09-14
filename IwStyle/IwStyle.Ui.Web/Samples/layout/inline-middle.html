@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>inline-middle</title>
+    <link href="../../Content/iwstyle.min.css" rel="stylesheet" />
+    <link href="../sample.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>iwl-inline-middle</h1>
+    <p>this class does [middle] the inline blocks in one line. it will no wrap and if it is to long it will show ellipsis.</p>
+
+    <p>Basic Sample</p>
+    <div class="iwl-inline-middle b">
+        text
+        <img src="http://a.dryicons.com/images/icon_sets/coquette_part_5_icons_set/png/128x128/html_file.png" width="35" />
+        text
+    </div>
+
+    <p>Sample with additonal rules <span class="i">[height:80px]</span> (vertical aligned on top by default)</p>
+    <div class="iwl-inline-middle b" style="height:70px;">
+        text
+        <img src="http://a.dryicons.com/images/icon_sets/coquette_part_5_icons_set/png/128x128/html_file.png" width="35" />
+        text
+    </div>
+
+    <p>Sample with additonal rules <span class="i">[height:80px] [line-height: 80px]</span> (height and line-height must be specified)</p>
+    <div class="iwl-inline-middle b" style="height:70px;line-height:70px;">
+        text
+        <img src="http://a.dryicons.com/images/icon_sets/coquette_part_5_icons_set/png/128x128/html_file.png" width="35" />
+        text
+    </div>
+
+    <p>Sample with additonal rules <span class="i">[height:80px] [line-height: 100px]</span> (vertical aligned on bottom by specifing an appropriate line-height)</p>
+    <div class="iwl-inline-middle b" style="height:70px;line-height:100px;">
+        text
+        <img src="http://a.dryicons.com/images/icon_sets/coquette_part_5_icons_set/png/128x128/html_file.png" width="35" />
+        text
+    </div>
+
+    <p>Sample with additonal rules <span class="i">[width:80px]</span> showing <span class="i">ellipsis</span></p>
+    <div class="iwl-inline-middle b" style="width:80px;">
+        text
+        <img src="http://a.dryicons.com/images/icon_sets/coquette_part_5_icons_set/png/128x128/html_file.png" width="35" />
+        text
+    </div>
+</body>
+</html>

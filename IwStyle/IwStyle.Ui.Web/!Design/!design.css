@@ -317,6 +317,20 @@ ul.iwl-list-ul-horizontal-wrap-right li {
 
 /*#endregion*/
 /*#region INLINE*/
+.iwl-inline-middle {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.iwl-inline-middle img {
+  vertical-align: middle; }
+
+/*#endregion*/
+/*#region INLINEBLOCK*/
 .iwl-inlineblock {
   display: inline-block;
   border: 0; }

@@ -134,6 +134,17 @@
     <Content Include="!Design\responsive\!design.css.map">
       <DependentUpon>!design.css</DependentUpon>
     </Content>
+    <Content Include="Samples\index.html" />
+    <Content Include="Samples\sample.css">
+      <DependentUpon>sample.scss</DependentUpon>
+    </Content>
+    <Content Include="Samples\sample.min.css">
+      <DependentUpon>sample.css</DependentUpon>
+    </Content>
+    <Content Include="Samples\sample.scss" />
+    <Content Include="Samples\sample.css.map">
+      <DependentUpon>sample.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,25 +153,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Samples\layout\sample.html" />
-    <Content Include="Samples\layout\sample1.png" />
-    <Content Include="Samples\layout\sample2.png" />
-    <Content Include="Samples\layout\sample3.png" />
-    <Content Include="Samples\layout\sample4.png" />
-    <Content Include="Samples\layout\sample6.html" />
-    <Content Include="Samples\layout\sample7.html" />
-    <Content Include="Samples\layout\sample8.html" />
-    <Content Include="Samples\layout\sample9.html" />
-    <Content Include="Samples\layout\sample5.html" />
-    <Content Include="Samples\layout\sample4.html" />
-    <Content Include="Samples\layout\sample3.html" />
-    <Content Include="Samples\layout\sample2.html" />
-    <Content Include="Samples\layout\sample1.html" />
-    <Content Include="Samples\layout\sample5.png" />
-    <Content Include="Samples\layout\sample6.png" />
-    <Content Include="Samples\layout\sample7.png" />
-    <Content Include="Samples\layout\sample8.png" />
-    <Content Include="Samples\layout\sample9.png" />
+    <Content Include="Samples\layout\Checkout\sample.html" />
+    <Content Include="Samples\layout\Checkout\sample1.png" />
+    <Content Include="Samples\layout\Checkout\sample2.png" />
+    <Content Include="Samples\layout\Checkout\sample3.png" />
+    <Content Include="Samples\layout\Checkout\sample4.png" />
+    <Content Include="Samples\layout\Checkout\sample6.html" />
+    <Content Include="Samples\layout\Checkout\sample7.html" />
+    <Content Include="Samples\layout\Checkout\sample8.html" />
+    <Content Include="Samples\layout\Checkout\sample9.html" />
+    <Content Include="Samples\layout\Checkout\sample5.html" />
+    <Content Include="Samples\layout\Checkout\sample4.html" />
+    <Content Include="Samples\layout\Checkout\sample3.html" />
+    <Content Include="Samples\layout\Checkout\sample2.html" />
+    <Content Include="Samples\layout\Checkout\sample1.html" />
+    <Content Include="Samples\layout\Checkout\sample5.png" />
+    <Content Include="Samples\layout\Checkout\sample6.png" />
+    <Content Include="Samples\layout\Checkout\sample7.png" />
+    <Content Include="Samples\layout\Checkout\sample8.png" />
+    <Content Include="Samples\layout\Checkout\sample9.png" />
+    <Content Include="Samples\layout\inline-middle.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

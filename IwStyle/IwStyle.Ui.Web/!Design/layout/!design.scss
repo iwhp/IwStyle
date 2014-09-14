@@ -241,6 +241,26 @@ $gridcount: 12;
 
 /*#region INLINE*/
 
+.iwl-inline-middle {
+    display: block;
+    text-align: center;
+    //height: 100px;
+    //line-height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.iwl-inline-middle img {
+    vertical-align:middle;
+}
+
+/*#endregion*/
+
+/*#region INLINEBLOCK*/
+
 .iwl-inlineblock {
     display: inline-block;
     border: 0;
