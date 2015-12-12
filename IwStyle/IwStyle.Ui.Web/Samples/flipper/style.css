@@ -1,0 +1,39 @@
+﻿.flipper-box {
+    min-height: 50px;
+}
+
+.flipper-box-front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 100px;
+    bottom: 100px;
+    background-color: orangered;
+    z-index: 10;
+}
+
+    .flipper-box-front:hover {
+        z-index: -10;
+        -moz-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        -o-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        -webkit-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+    }
+
+.flipper-box-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 100px;
+    bottom: 100px;
+    background-color: forestgreen;
+    z-index: -10;
+}
+
+    .flipper-box-back:hover {
+        z-index: 10;
+        -moz-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        -o-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        -webkit-transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+        transition: all 0.4s cubic-bezier(0.2,0.85,0.4,1.275) !important;
+    }
